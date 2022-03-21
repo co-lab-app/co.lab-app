@@ -2,6 +2,7 @@
 
 // imports NPM modules
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { Navbar } from './components'
 
 // import components
 
@@ -10,6 +11,11 @@ function App() {
   
   
   return (
+    <>
+    <div className="App">
+    <Navbar />
+    </div>
+
     <Router>
       
       
@@ -19,6 +25,7 @@ function App() {
     
     
     </Router>
+    </>
   );
 }
 
